@@ -2,13 +2,11 @@ const RegisterEventService = {
     getColorSelectObj: () => document.querySelectorAll(".product-inputs")[0],
     getSizeSelectObj: () => document.querySelectorAll(".product-inputs")[1],
 
-
     init: function() {
-        this.getColorSelectObj().disabled = true;
         this.getSizeSelectObj().disabled = true;
     },
 
-    addColorSelectObjEvent: function() {
+    addColorSelectEvent: function() {
         this.getColorSelectObj().onchange = () => {
             if(this.getColorSelectObj().value != "none"){
                 this.getSizeSelectObj().disabled = false;
@@ -20,10 +18,12 @@ const RegisterEventService = {
 }
 
 const ProductRegistration = {
-    registerEventService: RegisterEventService
+    initRegisterEvent: () => {
+        RegisterEventService.init();
+        RegisterEventService.addColorSelectEvent();
+    }
 }
 
 window.onload = () => {
-    ProductRegistration.registerEventService.init();
-    ProductRegistration.registerEventService.addColorSelectObjEvent();
+    ProductRegistration.initRegisterEvent();
 }

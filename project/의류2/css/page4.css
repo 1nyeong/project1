@@ -21,8 +21,8 @@ div{ -webkit-touch-callout: none;
 .product_view table th { padding: 7 0 50px; font-size: 16px; color: #232323; text-align: left;}  
 .product_view table td { padding: 7 0 50px; font-size: 16px; color: #232323; text-align: right;}
 .product_view .btns { position:  relative; box-sizing: border-box; text-align: center; line-height: 60px; top: 10px;}
-.product_view .btns > a { display: inline-block; width: 194px; text-align: center; font-size: 18px; }
-.product_view .btns > .btn1 { width: 398px; border: 1px solid #fff; background: #171717; color: #fff; bottom: 5px;}
+.product_view .btns > a { display: inline-block; width: 184px; text-align: center; font-size: 18px; }
+.product_view .btns > .btn1 { width: 388px; border: 1px solid #fff; background: #171717; color: #fff; bottom: 5px;}
 .product_view .btns > .btn2 { border: 1px solid #232323; background: #fff; color : #232323;}
 .product_view .btns > .btn3 { border: 1px solid #232323; background: #fff; color : #232323;}
 
@@ -98,4 +98,9 @@ a { text-decoration: none;
     text-decoration: none;
     font-weight: bold;
     padding: 0 5px;
-}   
+}
+
+.product-inputs{
+    width:100px;
+    height:22px;
+}
